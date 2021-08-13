@@ -14,11 +14,11 @@ namespace LinkedList
             singleLL.Display();
             Console.WriteLine("\n");
 
-            singleLL.AddLast(30);
+            singleLL.AddLast(70);
             singleLL.Display();
             Console.WriteLine("\n");
 
-            singleLL.AddLast(70);
+            singleLL.InsertAfter(singleLL.head, 30);
             singleLL.Display();
             Console.WriteLine("\n");
 

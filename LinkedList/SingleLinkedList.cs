@@ -37,6 +37,19 @@ namespace LinkedList
             Console.WriteLine($"{node.data} is appended to linked list");
         }
 
+        // Method to insert between the values
+        internal void InsertAfter(Node prev_node, int data)
+        {
+            if (prev_node == null)
+            {
+                Console.WriteLine("Previous node cannot be empty");
+                return;
+            }
+            Node node = new Node(data);
+            node.next = prev_node.next;
+            prev_node.next = node;
+        }
+
 
         // Method to display
         internal void Display()
