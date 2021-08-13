@@ -17,6 +17,27 @@ namespace LinkedList
             Console.WriteLine($"{node.data} is added to linked list");
         }
 
+        // Method to append at last position
+        internal void AddLast(int data)
+        {
+            Node node = new Node(data);
+            if (this.head == null)
+            {
+                this.head = node;
+            }
+            else
+            {
+                Node temp = head;
+                while (temp.next != null)
+                {
+                    temp = temp.next;
+                }
+                temp.next = node;
+            }
+            Console.WriteLine($"{node.data} is appended to linked list");
+        }
+
+
         // Method to display
         internal void Display()
         {

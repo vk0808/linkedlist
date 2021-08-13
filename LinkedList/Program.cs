@@ -10,15 +10,15 @@ namespace LinkedList
 
             SingleLinkedList singleLL = new SingleLinkedList();
 
-            singleLL.AddFirst(70);
+            singleLL.AddLast(56);
             singleLL.Display();
             Console.WriteLine("\n");
 
-            singleLL.AddFirst(30);
+            singleLL.AddLast(30);
             singleLL.Display();
             Console.WriteLine("\n");
 
-            singleLL.AddFirst(56);
+            singleLL.AddLast(70);
             singleLL.Display();
             Console.WriteLine("\n");
 
