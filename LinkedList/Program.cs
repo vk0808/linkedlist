@@ -8,6 +8,8 @@ namespace LinkedList
         {
             Console.WriteLine("Welcome to LinkedList Program");
 
+            SingleLinkedList singleLL = new SingleLinkedList();
+
         }
     }
 }
