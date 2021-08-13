@@ -10,6 +10,18 @@ namespace LinkedList
 
             SingleLinkedList singleLL = new SingleLinkedList();
 
+            singleLL.AddFirst(70);
+            singleLL.Display();
+            Console.WriteLine("\n");
+
+            singleLL.AddFirst(30);
+            singleLL.Display();
+            Console.WriteLine("\n");
+
+            singleLL.AddFirst(56);
+            singleLL.Display();
+            Console.WriteLine("\n");
+
         }
     }
 }
