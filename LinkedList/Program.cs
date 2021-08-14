@@ -22,7 +22,7 @@ namespace LinkedList
             singleLL.Display();
             Console.WriteLine("\n");
 
-            singleLL.DeleteFirst();
+            singleLL.DeleteLast();
             singleLL.Display();
             Console.WriteLine("\n");
         }

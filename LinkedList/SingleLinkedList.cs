@@ -64,6 +64,29 @@ namespace LinkedList
             Console.WriteLine("node is deleted from linked list");
         }
 
+        // Method to delete node at first position
+        internal void DeleteLast()
+        {
+            Node temp = this.head;
+            
+            if (temp == null)
+            {
+                return;
+            }
+
+            if (temp.next == null)
+            {
+                return;
+            }
+
+            while (temp.next.next != null)
+            {
+                temp = temp.next;
+            }
+
+            temp.next = null;
+            Console.WriteLine("node is deleted from linked list");
+        }
 
         // Method to display
         internal void Display()
