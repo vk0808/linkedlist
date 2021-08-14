@@ -37,7 +37,7 @@ namespace LinkedList
             Console.WriteLine($"{node.data} is appended to linked list");
         }
 
-        // Method to insert between the values
+        // Method to insert between the nodes
         internal void InsertAfter(Node prev_node, int data)
         {
             if (prev_node == null)
@@ -48,6 +48,20 @@ namespace LinkedList
             Node node = new Node(data);
             node.next = prev_node.next;
             prev_node.next = node;
+            Console.WriteLine($"{node.data} is inserted into linked list");
+        }
+
+
+        // Method to delete node at first position
+        internal void DeleteFirst()
+        {
+            Node temp = this.head;
+            if (temp == null)
+            {
+                return;
+            }
+            this.head = temp.next;
+            Console.WriteLine("node is deleted from linked list");
         }
 
 
@@ -65,8 +79,6 @@ namespace LinkedList
                 Console.Write(temp.data + " ");
                 temp = temp.next;
             }
-
-
         }
     }
 }
